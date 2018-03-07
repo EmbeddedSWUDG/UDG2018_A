@@ -56,9 +56,11 @@ int main(void) {
 
     /* Force the counter to be placed into memory. */
     volatile static int i = 0 ;
+    volatile static int j = 0xFFFF;
     /* Enter an infinite loop, just incrementing a counter. */
     while(1) {
         i++ ;
+        j--;
     }
     return 0 ;
 }
